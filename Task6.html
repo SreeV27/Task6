@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Registration Form</title>
+      <link rel="stylesheet" href="CSS/mystyle.css">
+      <script src="Script/myscript.js"></script>
+
+</head>
+<body>
+
+
+
+
+      <div class="heading  alignCenter fontfamily fontweight ">
+         <span>REGISTRATION FORM</SPAN>
+      </div>
+      <div class="form fontsize fontfamily fontweight">
+         <form>
+<div class="flex"> 
+<div class="divLabel">
+ <label for="fname">First name</label>
+</div>
+<div>
+ <input type="text" id="fname" required>
+</div>
+</div>
+
+
+<div class="flex margintop"> 
+<div class="divLabel ">
+ <label for="lname">Last name</label>
+</div>
+<div>
+ <input type="text" id="lname" required>
+</div>
+</div>
+
+<div class="flex margintop"> 
+<div class="divLabel ">
+ <label for="address">Address</label>
+</div>
+<div>
+  <textarea id="address" name="address" rows="4" cols="30"  minlength="10" required></textarea>
+</div>
+</div>
+
+<div class="flex margintop"> 
+<div class="divLabel ">
+ <label for="phnumber">Phone number</label>
+</div>
+<div>
+<input type="text" id="phnumber"  minlength="10" maxlength="10" required>
+
+</div>
+</div>
+
+
+
+<div class="flex margintop"> 
+<div class="divLabel ">
+ <label for="email">Email</label>
+</div>
+<div>
+  <textarea id="email" name="email" rows="1" cols="30"  required></textarea>
+</div>
+</div>
+
+
+
+<div class="flex margintop"> 
+<div class="divLabel ">
+ <label for="password">Password</label>
+</div>
+<div>
+ <input type="text" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" required>
+</div>
+</div>
+
+
+
+<div class="flex margintop"> 
+<div class="divLabel ">
+ <label for="cPassword">Confirm Password</label>
+</div>
+<div>
+ <input type="password" id="cPassword" required>
+</div>
+</div>
+
+<div class="alignCenter margintop"> 
+<input type="submit" onclick="submitForm()" value="Submit">
+
+</div>
+
+            
+
+         </form>
+      </div>
+      </body>
+</html>
